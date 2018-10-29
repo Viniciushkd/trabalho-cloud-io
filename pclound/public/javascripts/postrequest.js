@@ -10,7 +10,7 @@ $( document ).ready(function() {
     	$.ajax({
 			type : "POST",
 			contentType : "application/json",
-			url : "http://localhost:8080/twitter?tweet=" + $("#pesquisa").val(),
+			url : "http://young-peak-35339.herokuapp.com/twitter?tweet=" + $("#pesquisa").val(),
             dataType : 'json',
             timeout: 150000,
 			success : function(customer) {

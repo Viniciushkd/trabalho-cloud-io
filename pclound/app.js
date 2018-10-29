@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var expressSession = require('express-session');
 
 var router = express.Router();
+var porta = process.env.PORT || 8080;
 
 app = express();
 
@@ -23,7 +24,4 @@ load('models')
   .then('routes')
   .into(app);
 
-
-app.listen(5000, function () {
-  console.log("Aplicação no ar.");
-}); 
+  app.listen(porta);
